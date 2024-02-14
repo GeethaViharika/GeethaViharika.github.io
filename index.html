@@ -12,7 +12,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?w=1800&t=st=1707925418~exp=1707926018~hmac=5e6fcb147a19e97d5f57a666cfdbc5f20f6a0e78f4c6471683b365de235a1863');
+             background-image: linear-gradient(#e7e5f7,#e7e5f7);
             background-size: cover;
             background-repeat: no-repeat;
             margin: 0;
@@ -20,9 +20,10 @@
             text-align: start;
             color: black; 
         }
-
-        .btn:hover {
-            background-color: #0056b3;
+        .nav-tabs>li>a:hover {
+            background-color: #645d96
+            
+            color:white;
         }
         
         #intro {
@@ -54,14 +55,27 @@
             margin-right: 10px;
         }
         
-        #profile {
+          #profile {
           padding-left:24px;
         }
         
            #home {
           padding-left:24px;
         }
+          #contact{
+        .contact-details {
+            text-align: center;
+        }
 
+        .contact-info {
+            text-align: left;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
        
         }
         
@@ -70,9 +84,7 @@
 </head>
 <body>
   <div id="intro">
-    <div>
-      
-    </div>
+ 
     <div class="name">Geetha Viharika Rimmalapudi</div>
       <div class="job-title">Senior DevOps Engineer</div>
   </div>
@@ -85,10 +97,10 @@
     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="Experience" aria-selected="false">Experience</a>
+    <a class="nav-link" id="Experience-tab" data-toggle="tab" href="#Experience" role="tab" aria-controls="Experience" aria-selected="false">Experience</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="Contact Details" aria-selected="false">Contact Details</a>
+    <a class="nav-link" id="Contact-tab" data-toggle="tab" href="#Contact" role="tab" aria-controls="Contact Details" aria-selected="false">Contact Details</a>
   </li>
 </ul>
  
@@ -140,7 +152,7 @@
         
     </ul>
   </div>
-  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+  <div class="tab-pane" id="Experience" role="tabpanel" aria-labelledby="Experience-tab">
     
     <div class="container">
   <h1 class="mt-5">DevOps Experience</h1>
@@ -210,7 +222,7 @@
     
   </div>
   </div>
-  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+  <div class="tab-pane" id="Contact" role="tabpanel" aria-labelledby="Contact-tab">
     
 <div class="container">
    <div class="card">

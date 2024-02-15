@@ -1,240 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-             background-image: linear-gradient(#e7e5f7,#e7e5f7);
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
-            text-align: start;
-            color: black; 
-        }
-        .nav-tabs>li>a:hover {
-            background-color: #645d96
-            
-            color:white;
-        }
+   <head>
+      <title>Geetha Viharika</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <style>
+		
+         div#introrow {
+         padding-top:20px;
+         text-align: center;
+         font-size: 30px;
+         font-weight: bold;
+         background-color: #7C7CAB;
+         }
+		 div#footerrow {
+         padding-top:20px;
+         text-align: center;
+         font-size: 30px;
+         font-weight: bold;
+         background-color: #7C7CAB;
+         }
+		 div#home {
+		 font-size:20px;
+		 }
+		 div#Contact {
+		 font-size:20px;
+		 }
+         div#introtext {
+         text-align:left;
+         padding-top:28px;
+         }
+         div#intropic {
+         text-align:right;
+         padding-bottom:10px;
+         }
+         div#intropic img {
+         vertical-align: middle;
+         width: 200px;
+         height: 200px;
+         border-radius: 50%;
+         }
+         #introtext {
+         display:inline;
+         }
+         .hr {
+         margin : 0;
+         border : 4px solid mediumblue;
+         }
+         div#sidenavigationbar {
+         text-align:right;
+         background-color: beige;
+		 font-size:large;
+		 padding-top:20px;
+		 font-weight:bold;
+         }
+		 .scrollable-div {
+			height: 480px; /* set a fixed height for the div */
+			overflow-y: auto; /* enable vertical scrollbar */
+		 }
+		 
+		 .tab-content {
+			padding:20px;
+			margin:20px;
+			font-family:cursive
+		 }
+		 
+		 div#tabcontent {
+		 background:#e6e6e6;
+		 }
+		 
+		 footer {
+		 background : antiquewhite;
+		  padding-top:10px;
+         text-align: center;
+         font-size: 12px;
+         font-weight: bold;
+		 }
+		 
+      </style>
+   </head>
+   <body>
+      <div class="container-fluid" >
+         <div class="row content" id="introrow">
+            <div class="col-sm-6 col-md-5" id="intropic" >
+               <img src="img_avatar.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="col-sm-6 col-md-7" id="introtext">
+               <div class="name">Geetha Viharika Rimmalapudi</div>
+               <div class="job-title">Senior DevOps Engineer</div>
+            </div>
+         </div>
+         <hr class="hr" />
+         <div class="row content">
+            <div class="col-md-2 sidenav" id="sidenavigationbar">
+               <ul class="nav nav-pills nav-stacked" id="myTab" role="tablist">
+                  <li class="nav-item">
+                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="Experience-tab" data-toggle="tab" href="#Experience" role="tab" aria-controls="Experience" aria-selected="false">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="Contact-tab" data-toggle="tab" href="#Contact" role="tab" aria-controls="Contact Details" aria-selected="false">Contact Details</a>
+                  </li>
+               </ul>
+			   <div style="height:350px"></div>
+            </div>
+            <div class="col-md-10" id="tabcontent">
+               <div class="tab-content">
+                  <div class="tab-pane active scrollable-div" id="home" role="tabpanel" aria-labelledby="home-tab">
+                     <p>I'm a Senior DevOps Engineer with successfully implementing and managing CI/CD pipelines, optimizing infrastructure and automating deployment processes. Skilled in cloud technologies such as AWS and Azure.</p>
+                     <p>Passionate about leveraging emerging technologies to drive innovation and deliver scalable, reliable solutions.</p>
+                     <p>Skilled in integrating development and operations to enhance the efficiency, speed, and security of software development and delivery, surpassing traditional processes.</p>
+                  </div>
+                  <div class="tab-pane scrollable-div" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                     <h1>Geetha Viharika Rimmalapudi</h1>
+                     <p>Senior DevOps Engineer</p>
+                     <h2>Summary</h2>
+                     <p>I am a highly motivated and skilled DevOps Engineer with experience in various cloud platforms and automation tools. I specialize in implementing and maintaining scalable infrastructure and CI/CD pipelines to streamline the development process.</p>
+                     <h2>Responsibilities</h2>
+                     <ul>
+                        <li>Collaborating with development and operations teams to identify and address bottlenecks in the software development lifecycle.</li>
+                        <li>Designing and implementing automation tools and frameworks for continuous integration, delivery, and deployment.</li>
+                        <li>Monitoring and managing infrastructure, ensuring optimal performance, security, and scalability.</li>
+                        <li>Troubleshooting and resolving issues related to application development, deployment, and operations.</li>
+                        <li>Implementing and maintaining version control systems, configuration management tools, and other DevOps-related technologies.</li>
+                        <li>Ensuring compliance with industry best practices and organizational policies.</li>
+                        <li>Continuously improving processes and tools to enhance efficiency and productivity.</li>
+                     </ul>
+                     <h2>Education</h2>
+                     <p>Bachelor of Technology in Computer Science & Engineering  | K L University</p>
+                     <h2>Skills</h2>
+                     <ul>
+                        <li>CI/CD pipeline development and implementation</li>
+                        <li>Infrastructure as Code (IAC)</li>
+                        <li>Monitoring and alerting systems</li>
+                        <li>Security policy implementation and management)</li>
+                        <li>Scripting for system automation</li>
+                        <li>Source control systems</li>
+                        <li>Technology research and recommendations</li>
+                        <li>System performance optimization</li>
+                        <li>System reliability improvement</li>
+                        <li>Collaboration with development teams</li>
+                        <li>Cloud computing platforms (AWS, Azure, GCP)</li>
+                        <li>Containerization technologies (Docker, Kubernetes)</li>
+                        <li>Configuration management tools (Ansible, Puppet, Chef)</li>
+                        <li>Version control systems (Git, SVN)</li>
+                        <li>Scripting languages (Python, Bash, PowerShell)</li>
+                        <li>Networking and security fundamentals</li>
+                     </ul>
+                  </div>
+                  <div class="tab-pane scrollable-div" id="Experience" role="tabpanel" aria-labelledby="Experience-tab">
+                        <h1 class="mt-5">DevOps Experience</h1>
+                        <div class="company-section">
+                           <h2 class="company-title">Kroger - Senior Cloud Engineer</h2>
+                           <p><strong>Duration:</strong> November 2022 - Present</p>
+                           <p><strong>Responsibilities:</strong></p>
+                           <ul class="responsibility-list">
+                              <li>Supporting the introduction, further development and operation of cloud platform.</li>
+                              <li>Implimenting DevOps methodologies for the deployment of complex infrastructures and services.</li>
+                              <li>Deployed and maintained containerized applications with Docker and orchestrated them with Kubernetes.</li>
+                              <li>Monitored and ensured system reliability using tools like Prometheus and Grafana.</li>
+                              <li>Collaborated with development and operations teams to streamline the software delivery process.</li>
+                           </ul>
+                        </div>
+                        <div class="company-section">
+                           <h2 class="company-title">Pfizer - Senior Cloud DevOps Engineer</h2>
+                           <p><strong>Duration:</strong> March 2021 - October 2022</p>
+                           <p><strong>Responsibilities:</strong></p>
+                           <ul class="responsibility-list">
+                              <li>Design, implement, and manage cloud-based infrastructure solutions.</li>
+                              <li>Develop and maintain CI/CD pipelines for automated deployment and release management.</li>
+                              <li>Implement and maintain monitoring and alerting systems for infrastructure and applications.</li>
+                              <li>Automate provisioning and configuration management tasks using infrastructure-as-code tools.</li>
+                              <li>Collaborate with development and operations teams to optimize system performance and reliability.</li>
+                              <li>Ensure compliance with security policies and implement best practices for data protection.</li>
+                              <li>Provide technical leadership and mentorship to junior team members.</li>
+                              <li>Designed and maintained infrastructure as code using Terraform for cloud environments.</li>
+                              <li>Established monitoring and alerting systems to proactively identify and resolve issues.</li>
+                              <li>Implemented security best practices and conducted regular audits to ensure compliance.</li>
+                              <li>Mentored junior team members and conducted knowledge sharing sessions.</li>
+                           </ul>
+                        </div>
+                        <div class="company-section">
+                           <h2 class="company-title">J.B.Hunt Transport Services - Release Engineer</h2>
+                           <p><strong>Duration:</strong> June 2019 - March 2021</p>
+                           <p><strong>Responsibilities:</strong></p>
+                           <ul class="responsibility-list">
+                              <li>Manage the software release process, coordinating with development, QA, and operations teams.</li>
+                              <li>Develop and maintain automated release pipelines for efficient and reliable software deployments.</li>
+                              <li>Implement version control systems and branching strategies to manage code changes.</li>
+                              <li>Ensure release documentation is accurate and up-to-date.</li>
+                              <li>Monitor release performance and address any issues or bottlenecks.</li>
+                              <li>Collaborate with stakeholders to prioritize release schedules and deliverables.</li>
+                              <li>Continuously improve release processes and tools to increase efficiency and reduce risk.</li>
+                           </ul>
+                        </div>
+                        <div class="company-section">
+                           <h2 class="company-title">Infosys Limited - Linux Administrator</h2>
+                           <p><strong>Duration:</strong> August 2016 - June 2019</p>
+                           <p><strong>Responsibilities:</strong></p>
+                           <ul class="responsibility-list">
+                              <li>Install, configure, and maintain Linux-based systems.</li>
+                              <li>Monitor system performance and troubleshoot issues.</li>
+                              <li>Ensure system security by implementing and maintaining firewalls, antivirus software, and security patches.</li>
+                              <li>Manage user accounts and permissions.</li>
+                              <li>Automate tasks using shell scripts or configuration management tools.</li>
+                              <li>Backup and restore data as needed.</li>
+                              <li>Collaborate with other IT teams to integrate Linux systems into the overall infrastructure.</li>
+                              <li>Stay up-to-date with the latest Linux technologies and best practices.</li>
+                           </ul>
+                        </div>
         
-        #intro {
-          text-align: center;
-        }
-       .welcome-message {
-            margin-top: 20%;
-        }
-
-        .name {
-            font-size: 30px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .job-title {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            margin-right: 10px;
-        }
-        
-          #profile {
-          padding-left:24px;
-        }
-        
-           #home {
-          padding-left:24px;
-        }
-          #contact{
-        .contact-details {
-            text-align: center;
-        }
-
-        .contact-info {
-            text-align: left;
-            max-width: 300px;
-            margin: 0 auto;
-        }
-
-        .contact-info p {
-            margin: 10px 0;
-        }
-       
-        }
-        
-    </style>
- 
-</head>
-<body>
-  <div id="intro">
- 
-    <div class="name">Geetha Viharika Rimmalapudi</div>
-      <div class="job-title">Senior DevOps Engineer</div>
-  </div>
-
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="Experience-tab" data-toggle="tab" href="#Experience" role="tab" aria-controls="Experience" aria-selected="false">Experience</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="Contact-tab" data-toggle="tab" href="#Contact" role="tab" aria-controls="Contact Details" aria-selected="false">Contact Details</a>
-  </li>
-</ul>
- 
-<div class="tab-content">
-  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-  
-     
-      <p>I'm a Senior DevOps Engineer with successfully implementing and managing CI/CD pipelines, optimizing infrastructure and automating deployment processes. Skilled in cloud technologies such as AWS and Azure.</p>
-      <p>Passionate about leveraging emerging technologies to drive innovation and deliver scalable, reliable solutions.</p>
-      <p>Skilled in integrating development and operations to enhance the efficiency, speed, and security of software development and delivery, surpassing traditional processes.</p>
-    </div>
-
-  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-    
-    <h1>Geetha Viharika Rimmalapudi</h1>
-        <p>Senior DevOps Engineer</p>
-        <h2>Summary</h2>
-        <p>I am a highly motivated and skilled DevOps Engineer with experience in various cloud platforms and automation tools. I specialize in implementing and maintaining scalable infrastructure and CI/CD pipelines to streamline the development process.</p>
-        <h2>Responsibilities</h2>
-        <ul>
-         <li>Collaborating with development and operations teams to identify and address bottlenecks in the software development lifecycle.</li>
-         <li>Designing and implementing automation tools and frameworks for continuous integration, delivery, and deployment.</li>
-         <li>Monitoring and managing infrastructure, ensuring optimal performance, security, and scalability.</li>
-         <li>Troubleshooting and resolving issues related to application development, deployment, and operations.</li>
-         <li>Implementing and maintaining version control systems, configuration management tools, and other DevOps-related technologies.</li>
-         <li>Ensuring compliance with industry best practices and organizational policies.</li>
-         <li>Continuously improving processes and tools to enhance efficiency and productivity.</li>
-       </ul>
-        <h2>Education</h2>
-        <p>Bachelor of Technology in Computer Science & Engineering  | K L University</p>
-        <h2>Skills</h2>
-        <ul>
-            <li>CI/CD pipeline development and implementation</li>
-            <li>Infrastructure as Code (IAC)</li>
-            <li>Monitoring and alerting systems</li>
-            <li>Security policy implementation and management)</li>
-            <li>Scripting for system automation</li>
-            <li>Source control systems</li>
-            <li>Technology research and recommendations</li>
-            <li>System performance optimization</li>
-            <li>System reliability improvement</li>
-            <li>Collaboration with development teams</li>
-            <li>Cloud computing platforms (AWS, Azure, GCP)</li>
-            <li>Containerization technologies (Docker, Kubernetes)</li>
-            <li>Configuration management tools (Ansible, Puppet, Chef)</li>
-            <li>Version control systems (Git, SVN)</li>
-            <li>Scripting languages (Python, Bash, PowerShell)</li>
-            <li>Networking and security fundamentals</li>
-        
-    </ul>
-  </div>
-  <div class="tab-pane" id="Experience" role="tabpanel" aria-labelledby="Experience-tab">
-    
-    <div class="container">
-  <h1 class="mt-5">DevOps Experience</h1>
-
-  <div class="company-section">
-    <h2 class="company-title">Kroger - Senior Cloud Engineer</h2>
-    <p><strong>Duration:</strong> November 2022 - Present</p>
-    <p><strong>Responsibilities:</strong></p>
-    <ul class="responsibility-list">
-        <li>Supporting the introduction, further development and operation of cloud platform.</li>
-        <li>Implimenting DevOps methodologies for the deployment of complex infrastructures and services.</li>
-        <li>Deployed and maintained containerized applications with Docker and orchestrated them with Kubernetes.</li>
-        <li>Monitored and ensured system reliability using tools like Prometheus and Grafana.</li>
-        <li>Collaborated with development and operations teams to streamline the software delivery process.</li>
-    </ul>
-  </div>
-
-  <div class="company-section">
-    <h2 class="company-title">Pfizer - Senior Cloud DevOps Engineer</h2>
-    <p><strong>Duration:</strong> March 2021 - October 2022</p>
-    <p><strong>Responsibilities:</strong></p>
-    <ul class="responsibility-list">
-        <li>Design, implement, and manage cloud-based infrastructure solutions.</li>
-        <li>Develop and maintain CI/CD pipelines for automated deployment and release management.</li>
-        <li>Implement and maintain monitoring and alerting systems for infrastructure and applications.</li>
-        <li>Automate provisioning and configuration management tasks using infrastructure-as-code tools.</li>
-        <li>Collaborate with development and operations teams to optimize system performance and reliability.</li>
-        <li>Ensure compliance with security policies and implement best practices for data protection.</li>
-        <li>Provide technical leadership and mentorship to junior team members.</li>
-        <li>Designed and maintained infrastructure as code using Terraform for cloud environments.</li>
-        <li>Established monitoring and alerting systems to proactively identify and resolve issues.</li>
-        <li>Implemented security best practices and conducted regular audits to ensure compliance.</li>
-        <li>Mentored junior team members and conducted knowledge sharing sessions.</li>
-    </ul>
-  </div>
-
-  <div class="company-section">
-   <h2 class="company-title">J.B.Hunt Transport Services - Release Engineer</h2>
-   <p><strong>Duration:</strong> June 2019 - March 2021</p>
-   <p><strong>Responsibilities:</strong></p>
-    <ul class="responsibility-list">
-        <li>Manage the software release process, coordinating with development, QA, and operations teams.</li>
-        <li>Develop and maintain automated release pipelines for efficient and reliable software deployments.</li>
-        <li>Implement version control systems and branching strategies to manage code changes.</li>
-        <li>Ensure release documentation is accurate and up-to-date.</li>
-        <li>Monitor release performance and address any issues or bottlenecks.</li>
-        <li>Collaborate with stakeholders to prioritize release schedules and deliverables.</li>
-        <li>Continuously improve release processes and tools to increase efficiency and reduce risk.</li>
-    </ul>    
-  </div>
-  
-   <div class="company-section">
-    <h2 class="company-title">Infosys Limited - Linux Administrator</h2>
-    <p><strong>Duration:</strong> August 2016 - June 2019</p>
-    <p><strong>Responsibilities:</strong></p>
-     <ul class="responsibility-list">
-        <li>Install, configure, and maintain Linux-based systems.</li>
-        <li>Monitor system performance and troubleshoot issues.</li>
-        <li>Ensure system security by implementing and maintaining firewalls, antivirus software, and security patches.</li>
-        <li>Manage user accounts and permissions.</li>
-        <li>Automate tasks using shell scripts or configuration management tools.</li>
-        <li>Backup and restore data as needed.</li>
-        <li>Collaborate with other IT teams to integrate Linux systems into the overall infrastructure.</li>
-        <li>Stay up-to-date with the latest Linux technologies and best practices.</li>
-     </ul>
-    </div>
-    
-  </div>
-  </div>
-  <div class="tab-pane" id="Contact" role="tabpanel" aria-labelledby="Contact-tab">
-    
-<div class="container">
-   <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Name: Geetha Viharika Rimmalapudi</h5>
-      <p class="card-text">Email: geethaviharikarimmalapudi@gmail.com</p>
-      <p class="card-text">Phone: +1 4405446898</p>
-      <p class="card-text">Location: Mason,OH</p>
-    </div>
-  </div>
-</div>
-     </div>
-</div>
-</body>
+                  </div>
+                  <div class="tab-pane scrollable-div" id="Contact" role="tabpanel" aria-labelledby="Contact-tab">
+                        <div class="card">
+                           <div class="card-body">
+                              <p  class="card-text">Name: Geetha Viharika Rimmalapudi</p >
+                              <p class="card-text">Email: geethaviharikarimmalapudi@gmail.com</p>
+                              <p class="card-text">Phone: +1-440-544-6898</p>
+                              <p class="card-text">Location: Mason,OH</p>
+							  <p class="card-text">LinkedIn: <a href="http://www.linkedin.com/in/geetha-viharika-rimmalapudi-003277185">Geetha Viharika</a></p>
+							  <p class="card-text">GitHub: <a href="https://github.com/GeethaViharika">Geetha Viharika GitHub Profile</a></p>
+                           </div>
+                        </div>
+                   
+                  </div>
+               </div>
+            </div>
+         </div>
+		 
+      </div>
+	  <footer class="footer">
+		<div class="container">
+			<div class="row">
+				 <p>Email: <a href="mailto:geethaviharikarimmalapudi@gmail.com">geethaviharikarimmalapudi@gmail.com</a></p>
+			</div>
+			<div class="row">
+				 <p>Contact: <a href="tel:+14405446898">+1-440-544-6898</a></p>
+			</div>
+			<div class="row">
+				 <p>LinkedIn: <a href="http://www.linkedin.com/in/geetha-viharika-rimmalapudi-003277185">Geetha Viharika</a></p>
+			</div>
+			<div class="row">
+				 <p>GitHub: <a href="https://github.com/GeethaViharika">Geetha Viharika GitHub Profile</a></p>
+			</div>
+		</div>
+		</footer>
+   </body>
 </html>
